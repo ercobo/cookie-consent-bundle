@@ -1,5 +1,5 @@
 // Light theme (default)
-$ch-cookie-consent-background-color: #fff !default;
+$ch-cookie-consent-background-color: #ddd !default;
 $ch-cookie-consent-text-color: #000 !default;
 $ch-cookie-consent-border-color: #000 !default;
 $ch-cookie-consent-checkbox-inactive-background-color: #fff !default;
@@ -8,7 +8,7 @@ $ch-cookie-consent-checkbox-inactive-border-color: #223462 !default;
 $ch-cookie-consent-checkbox-active-background-color: #223462 !default;
 $ch-cookie-consent-checkbox-active-text-color: #fff !default;
 $ch-cookie-consent-checkbox-active-border-color: #fff !default;
-$ch-cookie-consent-button-background: linear-gradient(349.19deg, #CF1E34 0%, #EE365F 100%) !default;
+$ch-cookie-consent-button-background: #E51F20;
 $ch-cookie-consent-button-text-color: #fff !default;
 $ch-cookie-consent-secondary-button-background: transparent !default;
 $ch-cookie-consent-secondary-button-text-color: #000 !default;
@@ -149,6 +149,7 @@ $ch-cookie-consent-dark-theme-secondary-button-border-color: #fff !default;
 
     &__btn-wrapper {
         margin-bottom: 25px;
+        background: #dddddd !important;
 
         &:nth-child(2) {
             flex-grow: 1;
