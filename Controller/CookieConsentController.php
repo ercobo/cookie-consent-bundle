@@ -63,7 +63,8 @@ class CookieConsentController
         string $cookieConsentTheme,
         string $cookieConsentPosition,
         TranslatorInterface $translator,
-        bool $cookieConsentSimplified = false
+        bool $cookieConsentSimplified = false,
+        string $cookieAcceptRoute
     ) {
         $this->twigEnvironment         = $twigEnvironment;
         $this->formFactory             = $formFactory;
@@ -72,6 +73,7 @@ class CookieConsentController
         $this->cookieConsentPosition   = $cookieConsentPosition;
         $this->translator              = $translator;
         $this->cookieConsentSimplified = $cookieConsentSimplified;
+        $this->cookieAcceptRoute = $cookieAcceptRoute;
     }
 
     /**
@@ -89,6 +91,7 @@ class CookieConsentController
                 'theme'      => $this->cookieConsentTheme,
                 'position'   => $this->cookieConsentPosition,
                 'simplified' => $this->cookieConsentSimplified,
+                'accept_route'      => $this->cookieAcceptRoute,
             ])
         );
     }

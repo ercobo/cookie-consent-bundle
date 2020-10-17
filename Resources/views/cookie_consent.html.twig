@@ -15,7 +15,7 @@
             data-target="#cookiesModalInfo">{{ 'ch_cookie_consent.read_more'|trans({}, 'CHCookieConsentBundle') }}</a>
         {% endblock %}
 </p>
-        {{ form_start(form, {'attr': {'class': 'ch-cookie-consent__form'}}) }}
+        {{ form_start(form, {'attr': {'class': 'ch-cookie-consent__form'}, 'action': path(accept_route), 'method': 'GET'}) }}
             <div class="ch-cookie-consent__category-group" style="display:none !important;">
                 {% for child in form %}
                     {% if child.vars.block_prefixes[0] != 'button' %}

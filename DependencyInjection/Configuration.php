@@ -47,6 +47,9 @@ class Configuration implements ConfigurationInterface
                 ->booleanNode('simplified')
                     ->defaultFalse()
                 ->end()
+                ->variableNode('accept_route')
+                    ->defaultFalse()
+                ->end()
             ->end()
         ;
 
